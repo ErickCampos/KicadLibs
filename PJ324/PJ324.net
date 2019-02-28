@@ -1,0 +1,48 @@
+(export (version D)
+  (design
+    (source /home/erick/Desktop/PJ324/PJ324.sch)
+    (date "Qui 28 Fev 2019 08:00:33 -03")
+    (tool "Eeschema 4.0.2+dfsg1-stable")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source PJ324.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref PJ1)
+      (value PJ324)
+      (footprint PJ324:PJ324)
+      (libsource (lib pj324) (part PJ324))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C76B259)))
+  (libparts
+    (libpart (lib pj324) (part PJ324)
+      (fields
+        (field (name Reference) PJ)
+        (field (name Value) PJ324))
+      (pins
+        (pin (num 1) (name GND) (type input))
+        (pin (num 2) (name L) (type input))
+        (pin (num 3) (name ~) (type input))
+        (pin (num 4) (name R) (type input))
+        (pin (num 5) (name ~) (type input)))))
+  (libraries
+    (library (logical pj324)
+      (uri /home/erick/Desktop/PJ324/pj324.lib)))
+  (nets
+    (net (code 1) (name "Net-(PJ1-Pad1)")
+      (node (ref PJ1) (pin 1)))
+    (net (code 2) (name "Net-(PJ1-Pad2)")
+      (node (ref PJ1) (pin 2)))
+    (net (code 3) (name "Net-(PJ1-Pad3)")
+      (node (ref PJ1) (pin 3)))
+    (net (code 4) (name "Net-(PJ1-Pad4)")
+      (node (ref PJ1) (pin 4)))
+    (net (code 5) (name "Net-(PJ1-Pad5)")
+      (node (ref PJ1) (pin 5)))))
